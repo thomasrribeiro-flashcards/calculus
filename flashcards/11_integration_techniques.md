@@ -8,7 +8,7 @@ tags = ["math", "calculus", "integration", "u-substitution", "integration-by-par
 ## 11.1 Why Techniques Are Needed
 
 Q: Why do we need specialized integration techniques beyond a basic list of antiderivatives?
-A: Most integrands encountered in practice do not match a basic rule directly. Differentiation is a mechanical process (product rule, chain rule, quotient rule always apply), but integration is essentially pattern recognition — we have to transform the integrand into a form whose antiderivative we already know. Techniques like substitution, parts, trig substitution, and partial fractions are systematic ways to perform that transformation.
+A: Most integrands don't match a basic rule directly. Integration is pattern-recognition: the techniques (substitution, parts, trig sub, partial fractions) are systematic ways to transform an integrand into a form whose antiderivative is known.
 
 Q: Why is integration fundamentally harder than differentiation?
 A: Every elementary function has an elementary derivative, but many elementary functions (e.g. $e^{-x^2}$ or $\sin(x)/x$) have no elementary antiderivative. So integration sometimes fails outright, and even when it succeeds, there is no single algorithm — we must guess a transformation, try it, and verify by differentiating back.
@@ -225,7 +225,36 @@ A: Try techniques in roughly this order: (1) simple $u$-substitution to absorb a
 C: The standard integration strategy flow is: try [substitution], then integration by parts, then trig substitution, then partial fractions.
 
 Q: Why is $u$-substitution first in the strategy order?
-A: Because it is the cheapest technique — a single change of variable — and it often exposes structure that makes the remaining work easier (or finishes the problem outright). Even when another technique is ultimately needed, a preliminary substitution frequently simplifies the integrand into a standard form.
+A: It is the cheapest technique — a single change of variable — and it often exposes structure that makes the remaining work easier (or finishes the problem outright).
+
+## 11.22a Pattern-Recognition Triggers
+
+Q: You see $\int x \cos(x^2)\,dx$. What technique fires first?
+A: $u$-substitution with $u = x^2$ — the derivative $2x$ is sitting in the integrand.
+
+Q: You see $\int x e^x\,dx$ or $\int x \ln x\,dx$. What technique?
+A: Integration by parts (polynomial × exponential or polynomial × log — LIATE chooses $u$).
+
+Q: You see $\int \frac{1}{\sqrt{4 - x^2}}\,dx$. What technique?
+A: Trig substitution $x = 2\sin\theta$ (radical of $a^2 - x^2$ form).
+
+Q: You see $\int \frac{1}{x^2 + 9}\,dx$. What technique?
+A: Trig substitution $x = 3\tan\theta$, OR recognize directly as $\frac{1}{3}\arctan(x/3) + C$.
+
+Q: You see $\int \frac{3x + 5}{(x-1)(x+2)}\,dx$. What technique?
+A: Partial fractions — proper rational function with distinct linear factors.
+
+Q: You see $\int \sin^3 x \cos^2 x\,dx$ (one odd power). What technique?
+A: Peel off one $\sin x$ for $du$, convert remaining $\sin^2 x = 1 - \cos^2 x$, substitute $u = \cos x$.
+
+Q: You see $\int \sin^2 x\,dx$ (only even powers). What technique?
+A: Power-reduction identity $\sin^2 x = (1 - \cos 2x)/2$.
+
+Q: You see $\int e^x \sin x\,dx$. What technique?
+A: Integration by parts twice — the integral loops back, solve algebraically.
+
+Q: An integrand is a product but neither factor differentiates simpler than itself. Should you try IBP?
+A: No — IBP only helps when one factor simplifies under differentiation. Look for $u$-sub or trig identities instead.
 
 ## 11.23 Worked Example: Substitution
 
