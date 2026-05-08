@@ -38,7 +38,7 @@ A: Yes. The limit can fail to exist by tending to $+\infty$, by tending to $-\in
 
 ## 13.5 Doubly Infinite Intervals
 
-C: For $f$ continuous on $\mathbb{R}$, we split $\int_{-\infty}^\infty f(x)\,dx = \int_{-\infty}^c f(x)\,dx + \int_c^\infty f(x)\,dx$, where $c$ is any finite real number.
+C: For $f$ continuous on $\mathbb{R}$, we split $\int_{-\infty}^\infty f(x)\,dx = [\int_{-\infty}^c f(x)\,dx + \int_c^\infty f(x)\,dx]$, where $c$ is any finite real number.
 
 Q: Why is the choice of split point $c$ in $\int_{-\infty}^\infty f\,dx$ irrelevant to convergence?
 A: Any two choices $c_1, c_2$ differ by the proper integral $\int_{c_1}^{c_2} f\,dx$, which is a finite number. Adding a finite constant to either piece cannot change whether the total limit is finite, so convergence and the total value are independent of $c$.
@@ -59,7 +59,7 @@ A: $\int_0^1 \frac{1}{\sqrt{x}}\,dx$ is Type 2 because $1/\sqrt{x}\to\infty$ as 
 
 ## 13.8 Type 2 Definition as a Limit
 
-C: If $f$ is continuous on $(a,b]$ with $\lim_{x\to a^+}f(x)=\pm\infty$, we define $\int_a^b f(x)\,dx = \lim_{t\to a^+}\int_t^b f(x)\,dx$, where $t$ approaches the singularity from inside the interval.
+C: If $f$ is continuous on $(a,b]$ with $\lim_{x\to a^+}f(x)=\pm\infty$, we define $\int_a^b f(x)\,dx = [\lim_{t\to a^+}\int_t^b f(x)\,dx]$, where $t$ approaches the singularity from inside the interval.
 
 Q: Why must $t\to a^+$ (one-sided) in the Type 2 limit, rather than a general two-sided limit?
 A: The function is only defined on one side of the singularity within the integration interval, so only that side is available. Approaching from the right ensures $t$ stays inside $(a,b]$ where $f$ is continuous and the inner integral $\int_t^b f\,dx$ is an ordinary Riemann integral.
@@ -73,14 +73,14 @@ A: The integrand has a singularity at $x=0$, an interior point. Writing $\ln|x|\
 
 ## 13.10 p-Integral at Infinity
 
-C: $\int_1^\infty \frac{1}{x^p}\,dx$ converges iff $p > 1$, and its value is $\frac{1}{p-1}$.
+C: $\int_1^\infty \frac{1}{x^p}\,dx$ converges iff [$p > 1$], and its value is $\frac{1}{p-1}$.
 
 Q: Derive why $\int_1^\infty \frac{1}{x^p}\,dx$ converges precisely when $p>1$.
 A: For $p\neq 1$, $\int_1^b x^{-p}\,dx = \frac{b^{1-p}-1}{1-p}$. As $b\to\infty$, $b^{1-p}\to 0$ iff $1-p<0$, i.e. $p>1$, giving limit $\frac{1}{p-1}$. For $p\leq 1$ the power $b^{1-p}$ grows (or for $p=1$, $\ln b$ grows), so the integral diverges.
 
 ## 13.11 p-Integral Near Zero
 
-C: $\int_0^1 \frac{1}{x^p}\,dx$ converges iff $p < 1$, and its value is $\frac{1}{1-p}$.
+C: $\int_0^1 \frac{1}{x^p}\,dx$ converges iff [$p < 1$], and its value is $\frac{1}{1-p}$.
 
 Q: Derive why $\int_0^1 \frac{1}{x^p}\,dx$ converges precisely when $p<1$.
 A: For $p\neq 1$, $\int_t^1 x^{-p}\,dx = \frac{1-t^{1-p}}{1-p}$. As $t\to 0^+$, $t^{1-p}\to 0$ iff $1-p>0$, i.e. $p<1$, giving limit $\frac{1}{1-p}$. For $p\geq 1$, $t^{1-p}$ (or $\ln t$ when $p=1$) blows up and the integral diverges.
