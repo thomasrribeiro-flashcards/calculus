@@ -1,6 +1,6 @@
 +++
 order = 12
-subject = "Math"
+subject = "Mathematics"
 tags = ["math", "calculus", "integration", "area", "volume", "arc-length", "work", "average-value"]
 +++
 

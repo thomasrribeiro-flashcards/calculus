@@ -1,6 +1,6 @@
 +++
 order = 11
-subject = "Math"
+subject = "Mathematics"
 tags = ["math", "calculus", "integration", "u-substitution", "integration-by-parts", "partial-fractions", "trig-substitution"]
 +++
 
