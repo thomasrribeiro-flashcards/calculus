@@ -58,7 +58,8 @@ C: To find the limits for an area-between-curves integral, solve [$f(x) = g(x)$]
 Q: When should you integrate with respect to $y$ instead of $x$?
 A: When the region is more naturally described as "left curve $x = g(y)$ to right curve $x = f(y)$" for each $y$. This happens when one curve is not a single-valued function of $x$ (e.g., a sideways parabola) or when vertical strips would require splitting the region.
 
-C: Slicing horizontally gives strips of height $dy$ and width $\lbrack x_{\text{right}}(y) - x_{\text{left}}(y)\rbrack $, with total area [$\int_c^d \lbrack x_{\text{right}}(y) - x_{\text{left}}(y)\rbrack \,dy$], where $c$ and $d$ are the minimum and maximum $y$-values of the region.
+Q: When slicing a region horizontally into strips of height $dy$, what integral gives the total area?
+A: $A = \int_c^d \lbrack x_{\text{right}}(y) - x_{\text{left}}(y)\rbrack \,dy$, where $c$ and $d$ are the minimum and maximum $y$-values of the region and $x_{\text{right}}(y) - x_{\text{left}}(y)$ is the strip width.
 
 Q: Why does switching from $dx$ to $dy$ sometimes avoid splitting the integral into two pieces?
 A: A vertical strip may have a top curve that changes midway through the region, forcing two integrals. A horizontal strip may see the same left and right curves throughout, needing only one integral.
@@ -84,7 +85,8 @@ A: The axis of rotation must be an edge of the region — the region must touch 
 Q: Why do we subtract $\pi r_{\text{inner}}^2$ from $\pi r_{\text{outer}}^2$ in the washer method?
 A: When the axis of rotation lies outside the region, each cross section is a ring (washer). Its area is the outer disk area minus the inner disk area: $\pi R^2 - \pi r^2$, where $R$ is the outer radius and $r$ is the inner radius.
 
-C: The washer method gives $V = \int_a^b \pi\big(\lbrack R(x)\rbrack ^2 - \lbrack r(x)\rbrack ^2\big)\,dx$, where [$R(x)$] is the outer radius (distance from axis to far edge) and $r(x)$ is the inner radius (distance from axis to near edge).
+Q: In the washer method formula $V = \int_a^b \pi\big(\lbrack R(x)\rbrack ^2 - \lbrack r(x)\rbrack ^2\big)\,dx$, what are $R(x)$ and $r(x)$?
+A: $R(x)$ is the outer radius (distance from axis to far edge) and $r(x)$ is the inner radius (distance from axis to near edge).
 
 Q: How do you compute inner and outer radii when the axis of rotation is $y = k$ rather than the $x$-axis?
 A: The radius at $x$ is the distance from the curve to the line $y = k$, namely $|f(x) - k|$. The outer radius uses the curve farther from $y=k$, and the inner radius uses the curve closer to $y=k$.
@@ -190,7 +192,7 @@ A: Slice the liquid horizontally at height $y$ with thickness $dy$. The slab's w
 Q: Why is hydrostatic force an integral of pressure times area over depth?
 A: Pressure $P = \rho g h$ depends on depth $h$ (where $\rho$ is fluid density and $g$ is gravitational acceleration), so it varies across a submerged surface. Slice the surface into thin horizontal strips at depth $h$ with area $dA$; the force on a strip is $dF = P\,dA = \rho g h\,dA$, and total force is $F = \int \rho g h\,dA$.
 
-C: Hydrostatic force on a submerged vertical surface: $F = \int \rho g h(y)\,w(y)\,dy$, where [$\rho$] is the fluid density, $g$ is gravitational acceleration, $h(y)$ is the depth of strip $y$, and $w(y)$ is its horizontal width.
+C: Hydrostatic force on a submerged vertical surface: $F = $ [$\int \rho g h(y)\,w(y)\,dy$], where $\rho$ is the fluid density, $g$ is gravitational acceleration, $h(y)$ is the depth of strip $y$, and $w(y)$ is its horizontal width.
 
 Q: Why does pressure at depth $h$ equal $\rho g h$?
 A: Because the weight of a column of fluid above area $A$ at depth $h$ is $\rho g h A$. Dividing by $A$ (force per area) gives pressure $\rho g h$ — pressure grows linearly with depth.
@@ -216,7 +218,8 @@ A: Average velocity, average force, average power, and average temperature are a
 Q: Why is the centroid $\bar{x}$ of a lamina given by $\frac{1}{A}\int x\,dA$?
 A: The centroid is the mass-weighted average of position. For uniform density, mass is proportional to area, so $\bar{x} = \frac{\int x\,dA}{\int dA} = \frac{1}{A}\int x\,dA$, where $A$ is the total area.
 
-C: For a region with uniform density, the centroid coordinates are $\bar{x} = \frac{1}{A}\int x\,dA$ and $\bar{y} = \frac{1}{A}\int y\,dA$, where [$A$] is the total area of the region.
+Q: For a region with uniform density, what integrals give the centroid coordinates $\bar{x}$ and $\bar{y}$?
+A: $\bar{x} = \frac{1}{A}\int x\,dA$ and $\bar{y} = \frac{1}{A}\int y\,dA$, where $A$ is the total area of the region.
 
 Q: Why does symmetry help locate centroids without computing integrals?
 A: If a region is symmetric about a line, its centroid lies on that line — contributions from symmetric pairs of points cancel in the moment integral. This often determines $\bar{x}$ or $\bar{y}$ for free.

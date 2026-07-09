@@ -1,6 +1,6 @@
 +++
 order = 8
-subject = "Math"
+subject = "Mathematics"
 tags = ["math", "calculus", "optimization", "extrema", "constraints", "newton-method"]
 +++
 
@@ -148,7 +148,7 @@ A: It is perpendicular to the tangent of the curve at that point. Any non-perpen
 Q: In economics, why does profit maximization require marginal revenue to equal marginal cost, $MR = MC$?
 A: Profit $\pi(q) = R(q) - C(q)$, so $\pi'(q) = R'(q) - C'(q) = MR - MC$. Setting $\pi'(q) = 0$ gives $MR = MC$. At higher $q$, cost rises faster than revenue; at lower $q$, an extra unit still adds more revenue than cost — balance occurs where they're equal.
 
-C: A profit-maximizing firm produces the quantity where [marginal revenue equals marginal cost], i.e. $MR = MC$.
+C: A profit-maximizing firm produces the quantity where [marginal revenue equals marginal cost].
 
 Q: At the profit-maximizing quantity, what second-order condition must hold?
 A: $\pi''(q) < 0$, equivalently $MR'(q) < MC'(q)$: marginal cost must be rising faster than marginal revenue at that point. Otherwise $MR=MC$ would identify a profit minimum, not a maximum.

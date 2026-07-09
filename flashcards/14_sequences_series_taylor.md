@@ -1,6 +1,6 @@
 +++
 order = 14
-subject = "Math"
+subject = "Mathematics"
 tags = ["math", "calculus", "sequences", "series", "convergence-tests", "power-series", "taylor-series", "maclaurin"]
 +++
 
@@ -207,7 +207,7 @@ A: $(a-R, a+R)$, $[a-R, a+R)$, $(a-R, a+R]$, or $[a-R, a+R]$, plus the degenerat
 Q: Why does the Taylor series use derivatives at $a$ as coefficients?
 A: If $f(x) = \sum c_n(x-a)^n$, differentiating $k$ times and evaluating at $x = a$ kills every term except the $k$-th and gives $f^{(k)}(a) = k! \cdot c_k$. So $c_k = f^{(k)}(a)/k!$ — the coefficients are forced by local derivative data.
 
-C: The Taylor series of $f$ at $a$ is $\sum_{n=0}^\infty \frac{f^{(n)}(a)}{n!}(x - a)^n$, where $f^{(n)}(a)$ is the $n$-th derivative at $a$ and $n!$ is the [factorial] of $n$.
+C: The Taylor series of $f$ at $a$ is [$\sum_{n=0}^\infty \frac{f^{(n)}(a)}{n!}(x - a)^n$], where $f^{(n)}(a)$ is the $n$-th derivative at $a$.
 
 Q: Before deriving Taylor's formula, predict: why should $c_n$ involve $n!$?
 A: Repeated differentiation of $(x-a)^n$ produces $n!$ as the leading constant. Dividing by $n!$ undoes this combinatorial factor so each coefficient equals a clean derivative value. Without $n!$, the series would not reconstruct $f$'s derivatives cleanly.
@@ -245,7 +245,7 @@ A: Start with $1/(1+u) = \sum (-u)^n$ (geometric with $r = -u$), valid for $|u|<
 Q: Why do we need a remainder term for Taylor approximations?
 A: A finite Taylor polynomial $T_n(x)$ is an approximation, not an equality. The remainder $R_n(x) = f(x) - T_n(x)$ measures the error. Taylor's theorem bounds this error, making the approximation rigorous and giving a criterion for when the full Taylor series equals $f$.
 
-C: Lagrange form of the remainder: $R_n(x) = \frac{f^{(n+1)}(c)}{(n+1)!}(x - a)^{n+1}$ for some $c$ between $a$ and $x$, where $f^{(n+1)}$ is the $(n+1)$-th derivative and $c$ is an [unknown] intermediate point.
+C: Lagrange form of the remainder: $R_n(x) =$ [$\frac{f^{(n+1)}(c)}{(n+1)!}(x - a)^{n+1}$] for some $c$ between $a$ and $x$, where $f^{(n+1)}$ is the $(n+1)$-th derivative and $c$ is an unknown intermediate point.
 
 C: The Taylor series of $f$ converges to $f(x)$ at a point $x$ iff $\lim_{n\to\infty} R_n(x) = [0]$, where $R_n(x)$ is the remainder after $n$ terms.
 

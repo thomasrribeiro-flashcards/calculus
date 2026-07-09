@@ -135,7 +135,7 @@ Result: $\int x^2 e^x\,dx = x^2 e^x - 2x e^x + 2 e^x + C$.
 Q: How do you integrate $\int \sin^m x \cos^n x\,dx$ when at least one of $m, n$ is odd?
 A: Peel off one copy of the odd-powered function to serve as $du$, and convert the remaining even power to the other function using $\sin^2 x + \cos^2 x = 1$. For example, if $n$ is odd, write $\cos^n x = \cos^{n-1} x \cdot \cos x$, convert $\cos^{n-1} x = (1 - \sin^2 x)^{(n-1)/2}$, and let $u = \sin x$.
 
-C: For $\int \sin^3 x \cos^4 x\,dx$, the odd power is on [$\sin$], so we peel off one $\sin x$ and substitute $u = \cos x$.
+C: For $\int \sin^3 x \cos^4 x\,dx$, the odd power is on $\sin$, so we peel off one $\sin x$ and substitute $u = $ [$\cos x$].
 
 Q: Why does the "peel off one, convert the rest" strategy fail when both $m$ and $n$ are even?
 A: There is no single $\sin x$ or $\cos x$ available as $du$, and converting an even power using $\sin^2 + \cos^2 = 1$ just swaps one even-power problem for another. We need a different tool: the power-reduction identities.

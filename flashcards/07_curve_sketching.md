@@ -1,6 +1,6 @@
 +++
 order = 7
-subject = "Math"
+subject = "Mathematics"
 tags = ["math", "calculus", "curve-sketching", "monotonicity", "concavity", "inflection", "asymptotes"]
 +++
 

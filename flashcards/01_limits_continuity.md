@@ -1,6 +1,6 @@
 +++
 order = 1
-subject = "Math"
+subject = "Mathematics"
 tags = ["math", "calculus", "limits", "continuity", "epsilon-delta", "squeeze-theorem"]
 +++
 
@@ -65,7 +65,7 @@ A: Because the limit $L = \lim_{x\to a} f(x)$ exists, we can "remove" the discon
 
 ## 1.6 Formal Epsilon-Delta Definition
 
-C: Formally, $\lim_{x\to a} f(x) = L$ means: for every $\epsilon > 0$ there exists a [$\delta > 0$] such that $0 < |x - a| < \delta$ implies $|f(x) - L| < \epsilon$, where $\epsilon$ is the target output tolerance, $\delta$ is the input tolerance, $a$ is the approached point, and $L$ is the limit.
+C: Formally, $\lim_{x\to a} f(x) = L$ means: for every $\epsilon > 0$ there exists a $\delta > 0$ such that [$0 < |x - a| < \delta$] implies $|f(x) - L| < \epsilon$, where $\epsilon$ is the target output tolerance, $\delta$ is the input tolerance, $a$ is the approached point, and $L$ is the limit.
 
 Q: In the $\epsilon$-$\delta$ definition, what role does $\epsilon$ play and what role does $\delta$ play?
 A: $\epsilon$ (epsilon) is a challenge: an arbitrary positive tolerance specifying how close to $L$ we demand $f(x)$ to be. $\delta$ (delta) is the response: a positive distance around $a$ such that all $x$ within that distance (and $x \neq a$) are guaranteed to produce $f(x)$ within $\epsilon$ of $L$. The definition requires a valid $\delta$ to exist for every possible $\epsilon$, no matter how small.
@@ -173,7 +173,7 @@ A: When the denominator of $p(x)/q(x)$ approaches zero while the numerator appro
 
 C: The notation $\lim_{x\to \infty} f(x) = L$ means that $f(x)$ can be made arbitrarily close to $L$ by taking $x$ [sufficiently large], where $f$ is the function and $L$ is the limiting value.
 
-C: A [horizontal asymptote] of $f$ at level $L$ means $\lim_{x\to \infty} f(x) = L$ or $\lim_{x\to -\infty} f(x) = L$, where $f$ is the function and $L$ is the horizontal asymptote value.
+C: A [horizontal asymptote] of $f$ at level $L$ means $\lim_{x\to \infty} f(x) = L$ or $\lim_{x\to -\infty} f(x) = L$, where $f$ is the function and $L$ is the level the outputs approach.
 
 Q: What is the difference between a limit at infinity and an infinite limit?
 A: A limit at infinity, $\lim_{x\to\infty} f(x)$, asks what value $f$ approaches as the input grows without bound — the limit may be a finite number, infinite, or nonexistent. An infinite limit, $\lim_{x\to a} f(x) = \infty$, asks what the output does as $x$ approaches a finite point $a$ — describing unbounded growth of the output. One concerns large inputs; the other concerns large outputs.

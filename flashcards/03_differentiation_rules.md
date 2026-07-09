@@ -1,6 +1,6 @@
 +++
 order = 3
-subject = "Math"
+subject = "Mathematics"
 tags = ["math", "calculus", "derivative", "power-rule", "product-rule", "quotient-rule", "chain-rule"]
 +++
 
@@ -210,6 +210,6 @@ S:
 5. Combine: $f'(x) = \dfrac{-4x}{(x^2 - 1)^2}$.
 
 **EVALUATE**:
-- Sign check: at $x = 2$, $f(2) = 5/3$, and a slightly larger $x$ gives a slightly smaller $f$ (numerator and denominator both increase, but denominator grows faster since $x^2 - 1 < x^2 + 1$... wait, check: numerator grows like $2x$, denominator like $2x$, but quotient decreases because... ). More robustly: $f'(2) = -8/9 < 0$, consistent with $f$ decreasing on $(1, \infty)$.
+- Sign check: $f'(2) = -8/9 < 0$, consistent with $f$ decreasing on $(1, \infty)$ — indeed $f(x) = 1 + \dfrac{2}{x^2 - 1}$, which shrinks toward $1$ as $x$ grows.
 - Symmetry: $f$ is even (replace $x \to -x$), so $f'$ should be odd. $-4x/(x^2-1)^2$ is indeed odd. ✓
 - At $x = 0$: $f(0) = -1$ is a local extremum (symmetry axis), so $f'(0) = 0$. Our formula: $-4(0)/1 = 0$. ✓

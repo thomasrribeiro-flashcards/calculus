@@ -1,6 +1,6 @@
 +++
 order = 5
-subject = "Math"
+subject = "Mathematics"
 tags = ["math", "calculus", "implicit-differentiation", "related-rates", "chain-rule"]
 +++
 
@@ -100,7 +100,7 @@ C: For the circle $x^2+y^2=r^2$, implicit differentiation gives slope $\frac{dy}
 Q: How do you find $\frac{d^2y}{dx^2}$ from an implicit relation?
 A: First obtain $\frac{dy}{dx}$ in terms of $x$ and $y$. Differentiate that expression again w.r.t. $x$, using quotient/product rules, and every time $y$ is differentiated apply the chain rule (replace $\frac{dy}{dx}$ by its known expression). The result is an expression in $x$ and $y$ only.
 
-C: To find the second derivative implicitly, differentiate $\frac{dy}{dx}$ again and substitute the known expression for [$\frac{dy}{dx}$] wherever it appears.
+C: To find the second derivative implicitly, differentiate the expression for $\frac{dy}{dx}$ again, and wherever $\frac{dy}{dx}$ reappears, [substitute its known expression] so the result involves only $x$ and $y$.
 
 ## 5.10 Derivatives of Inverse Functions
 
