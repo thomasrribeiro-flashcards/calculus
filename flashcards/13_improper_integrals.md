@@ -25,7 +25,7 @@ A: It asks whether the total area under $y=f(x)$ over the entire unbounded inter
 
 ## 13.3 Type 1 Definition as a Limit
 
-C: For $f$ continuous on $[a,\infty)$, we define $\int_a^\infty f(x)\,dx = \lim_{b\to\infty}\int_a^b f(x)\,dx$, where $b$ is a finite upper bound that grows without bound.
+C: For $f$ continuous on $\lbrack a,\infty)$, we define $\int_a^\infty f(x)\,dx =$ [$\lim_{b\to\infty}\int_a^b f(x)\,dx$], where $b$ is a finite upper bound that grows without bound.
 
 Q: Why define $\int_a^\infty f\,dx$ using a limit over a proper integral, rather than directly?
 A: On each finite interval $[a,b]$ the ordinary Riemann integral is well defined, producing a function $F(b)=\int_a^b f\,dx$. Taking $\lim_{b\to\infty}F(b)$ transfers the problem to a standard real-number limit, for which we already have tools (L'Hopital, squeeze theorem, etc.).
