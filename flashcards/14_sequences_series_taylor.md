@@ -1,5 +1,6 @@
 +++
 order = 14
+subject = "Math"
 tags = ["math", "calculus", "sequences", "series", "convergence-tests", "power-series", "taylor-series", "maclaurin"]
 +++
 

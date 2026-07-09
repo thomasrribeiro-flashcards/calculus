@@ -1,5 +1,6 @@
 +++
 order = 12
+subject = "Math"
 tags = ["math", "calculus", "integration", "area", "volume", "arc-length", "work", "average-value"]
 +++
 

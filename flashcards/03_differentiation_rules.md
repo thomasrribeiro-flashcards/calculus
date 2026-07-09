@@ -1,5 +1,6 @@
 +++
 order = 3
+subject = "Math"
 tags = ["math", "calculus", "derivative", "power-rule", "product-rule", "quotient-rule", "chain-rule"]
 +++
 
