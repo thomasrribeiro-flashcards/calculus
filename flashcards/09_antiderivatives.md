@@ -41,7 +41,7 @@ A: It is the one undetermined parameter that arises whenever we reverse differen
 Q: Why does adding a constant to an antiderivative produce another antiderivative?
 A: Differentiation is linear, and the derivative of any constant is zero: $\frac{d}{dx}(F(x) + C) = F'(x) + 0 = f(x)$. So shifting $F$ vertically leaves its slope function untouched.
 
-C: For any constant $C$, $\frac{d}{dx}[F(x) + C] = $ [$F'(x)$], because the derivative of a constant is zero.
+C: For any constant $C$, $\frac{d}{dx}\lbrack F(x) + C\rbrack  = $ [$F'(x)$], because the derivative of a constant is zero.
 
 ## 9.5 Why EVERY Antiderivative Differs by Only a Constant
 
@@ -160,7 +160,7 @@ A: The denominator is $1 + x^2$, a sum of squares, which never factors over the 
 Q: What are the two linearity properties of the indefinite integral?
 A: (1) Sum rule: $\int [f(x) + g(x)]\,dx = \int f(x)\,dx + \int g(x)\,dx$. (2) Constant multiple rule: $\int k\,f(x)\,dx = k\int f(x)\,dx$ for any constant $k$. Together these mean $\int$ is a linear operator on functions.
 
-C: The sum rule for integrals: $\int [f(x)+g(x)]\,dx = $ [$\int f(x)\,dx + \int g(x)\,dx$].
+C: The sum rule for integrals: $\int \lbrack f(x)+g(x)\rbrack \,dx = $ [$\int f(x)\,dx + \int g(x)\,dx$].
 
 C: The constant multiple rule: for a constant $k$, $\int k\,f(x)\,dx = $ [$k\int f(x)\,dx$].
 

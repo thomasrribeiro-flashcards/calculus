@@ -14,7 +14,7 @@ A: Unlike a rectangle or triangle, a curve has no fixed base and height, so elem
 Q: Before defining the definite integral, predict: how could you estimate the area under $y = x^2$ from $0$ to $1$ using only rectangles?
 A: Slice $[0, 1]$ into $n$ equal subintervals, build a rectangle over each using the function value at some point in the subinterval as the height, and sum their areas. Letting $n \to \infty$ should squeeze the approximation to the true area.
 
-C: The central problem that motivates the definite integral is finding the [signed area] between the graph of $f$ and the $x$-axis on an interval $[a, b]$.
+C: The central problem that motivates the definite integral is finding the [signed area] between the graph of $f$ and the $x$-axis on an interval $\lbrack a, b\rbrack $.
 
 Q: Why is area a useful model even for integrals of non-geometric quantities (like velocity over time)?
 A: Because integration accumulates the product $f(x)\,dx$ over an interval, any quantity that is a rate times a variable (velocity × time, force × distance, density × length) can be interpreted geometrically as "area under the rate curve," giving the total accumulated quantity.
@@ -35,7 +35,7 @@ A: The left sum underestimates (each rectangle sits below the curve) and the rig
 
 ## 10.3 Partitions
 
-C: A [partition] of $[a, b]$ is a finite set $P = \{x_0, x_1, \dots, x_n\}$ with $a = x_0 < x_1 < \cdots < x_n = b$, dividing $[a, b]$ into $n$ subintervals.
+C: A [partition] of $\lbrack a, b\rbrack $ is a finite set $P = \{x_0, x_1, \dots, x_n\}$ with $a = x_0 < x_1 < \cdots < x_n = b$, dividing $\lbrack a, b\rbrack $ into $n$ subintervals.
 
 C: The width of the $i$-th subinterval of a partition is $\Delta x_i = [x_i - x_{i-1}]$, where $x_i$ and $x_{i-1}$ are its right and left endpoints.
 
@@ -49,7 +49,7 @@ A: All subintervals have equal width $\Delta x = (b - a)/n$. Then $\|P\| = \Delt
 
 ## 10.4 Riemann Sums
 
-C: A [Riemann sum] for $f$ over a partition $P$ of $[a, b]$ with sample points $x_i^* \in [x_{i-1}, x_i]$ is $\sum_{i=1}^n f(x_i^*)\,\Delta x_i$, where $\Delta x_i = x_i - x_{i-1}$.
+C: A [Riemann sum] for $f$ over a partition $P$ of $\lbrack a, b\rbrack $ with sample points $x_i^* \in \lbrack x_{i-1}, x_i\rbrack $ is $\sum_{i=1}^n f(x_i^*)\,\Delta x_i$, where $\Delta x_i = x_i - x_{i-1}$.
 
 Q: In the Riemann sum $\sum_{i=1}^n f(x_i^*)\,\Delta x_i$, what do $f(x_i^*)$ and $\Delta x_i$ represent geometrically?
 A: $f(x_i^*)$ is the signed height of the $i$-th rectangle (positive above the $x$-axis, negative below), and $\Delta x_i$ is its base width. Their product is the signed area of one rectangle; the sum is the total signed area of the approximation.
@@ -59,7 +59,7 @@ A: For an integrable function, the choice does not affect the limit as $\|P\| \t
 
 ## 10.5 Definite Integral as Limit
 
-C: The [definite integral] of $f$ from $a$ to $b$ is $\int_a^b f(x)\,dx = \lim_{\|P\|\to 0}\sum_{i=1}^n f(x_i^*)\,\Delta x_i$, where $P$ is a partition of $[a, b]$, $\Delta x_i$ its subinterval widths, and $x_i^* \in [x_{i-1}, x_i]$ a sample point.
+C: The [definite integral] of $f$ from $a$ to $b$ is $\int_a^b f(x)\,dx = \lim_{\|P\|\to 0}\sum_{i=1}^n f(x_i^*)\,\Delta x_i$, where $P$ is a partition of $\lbrack a, b\rbrack $, $\Delta x_i$ its subinterval widths, and $x_i^* \in \lbrack x_{i-1}, x_i\rbrack $ a sample point.
 
 Q: In the notation $\int_a^b f(x)\,dx$, what do the symbols $\int$, $a$, $b$, $f(x)$, and $dx$ encode?
 A: $\int$ is a stylized "S" for sum, $a$ and $b$ are the lower and upper limits of integration, $f(x)$ is the integrand (the function being integrated), and $dx$ indicates the variable of integration and represents the infinitesimal width $\Delta x_i$ in the limit.
@@ -71,9 +71,9 @@ C: The variable $x$ in $\int_a^b f(x)\,dx$ is called a [dummy variable] because 
 
 ## 10.6 When Is $f$ Riemann Integrable?
 
-C: Every [continuous] function on a closed bounded interval $[a, b]$ is Riemann integrable.
+C: Every [continuous] function on a closed bounded interval $\lbrack a, b\rbrack $ is Riemann integrable.
 
-C: A function that is [bounded] on $[a, b]$ and has only finitely many discontinuities there is Riemann integrable.
+C: A function that is [bounded] on $\lbrack a, b\rbrack $ and has only finitely many discontinuities there is Riemann integrable.
 
 Q: Why does continuity on $[a, b]$ guarantee integrability?
 A: A continuous function on a closed, bounded interval is uniformly continuous and bounded. This ensures that upper and lower Riemann sums converge to the same limit as $\|P\| \to 0$, so the defining limit of Riemann sums exists and is unique.
@@ -81,7 +81,7 @@ A: A continuous function on a closed, bounded interval is uniformly continuous a
 Q: Give an example of a non-integrable bounded function on $[0, 1]$ and explain why.
 A: The Dirichlet function $f(x) = 1$ if $x$ is rational, $0$ otherwise. On every subinterval, $\sup f = 1$ and $\inf f = 0$, so upper sums always equal $1$ and lower sums always equal $0$. They never converge to a common value, so $f$ is not Riemann integrable.
 
-C: A [piecewise-continuous] function on $[a, b]$ (continuous except at finitely many jumps) is Riemann integrable.
+C: A [piecewise-continuous] function on $\lbrack a, b\rbrack $ (continuous except at finitely many jumps) is Riemann integrable.
 
 ## 10.7 Geometric Interpretation: Signed Area
 
@@ -91,7 +91,7 @@ A: Regions where $f(x) > 0$ contribute positive area (above the $x$-axis), and r
 Q: Why is $\int_{-1}^{1} x\,dx = 0$ even though the graph encloses nonzero area with the $x$-axis?
 A: The region from $-1$ to $0$ lies below the axis (negative signed area) and is the mirror image of the region from $0$ to $1$ above the axis (positive signed area). The two signed areas cancel exactly, giving net zero.
 
-C: The geometric [total area] between the graph of $f$ and the $x$-axis on $[a, b]$ is $\int_a^b |f(x)|\,dx$, which is always non-negative.
+C: The geometric [total area] between the graph of $f$ and the $x$-axis on $\lbrack a, b\rbrack $ is $\int_a^b |f(x)|\,dx$, which is always non-negative.
 
 Q: How do signed area and total area differ for $f(x) = \sin x$ on $[0, 2\pi]$?
 A: Signed area: $\int_0^{2\pi} \sin x\,dx = 0$ because the positive half over $[0, \pi]$ cancels the negative half over $[\pi, 2\pi]$. Total area: $\int_0^{2\pi}|\sin x|\,dx = 4$, counting both bumps positively.
@@ -139,7 +139,7 @@ A: It sandwiches the integral between the area of the smallest enclosing rectang
 
 ## 10.12 Mean Value Theorem for Integrals
 
-C: The [average value] of a continuous function $f$ on $[a, b]$ is $\bar f = \frac{1}{b-a}\int_a^b f(x)\,dx$, where $a$ and $b$ are the endpoints.
+C: The [average value] of a continuous function $f$ on $\lbrack a, b\rbrack $ is $\bar f = \frac{1}{b-a}\int_a^b f(x)\,dx$, where $a$ and $b$ are the endpoints.
 
 C: Mean Value Theorem for Integrals: if $f$ is continuous on $[a, b]$, there exists $[c \in (a, b)]$ such that $f(c) = \frac{1}{b-a}\int_a^b f(x)\,dx$.
 

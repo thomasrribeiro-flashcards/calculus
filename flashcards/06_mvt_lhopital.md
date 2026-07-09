@@ -126,7 +126,7 @@ A: If $f'(x) = g'(x)$ on an interval $I$, then $(f-g)'(x) = 0$ on $I$. By the pr
 
 C: By MVT, if $f'(x) = 0$ on an interval, then $f$ is [constant] on that interval.
 
-C: By MVT, if $f'(x) > 0$ on $(a,b)$, then $f$ is strictly [increasing] on $[a,b]$.
+C: By MVT, if $f'(x) > 0$ on $(a,b)$, then $f$ is strictly [increasing] on $\lbrack a,b\rbrack $.
 
 ## 6.11 Cauchy's Mean Value Theorem
 

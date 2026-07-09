@@ -26,7 +26,7 @@ A: It is the average velocity of the particle over the time interval from $t = a
 
 ## 2.3 Average Rate of Change
 
-C: The [average rate of change] of $f$ over $[a, b]$ is $\frac{f(b) - f(a)}{b - a}$, where $f(a)$ and $f(b)$ are the output values at the endpoints and $b - a$ is the length of the interval.
+C: The [average rate of change] of $f$ over $\lbrack a, b\rbrack $ is $\frac{f(b) - f(a)}{b - a}$, where $f(a)$ and $f(b)$ are the output values at the endpoints and $b - a$ is the length of the interval.
 
 Q: Why is the average rate of change $\frac{f(b) - f(a)}{b - a}$ geometrically equal to the slope of a secant line?
 A: The graph points $(a, f(a))$ and $(b, f(b))$ lie on the curve $y = f(x)$. The line through them is the secant line over $[a, b]$, and its slope by the two-point formula is $\frac{f(b) - f(a)}{b - a}$. So "average rate of change of $f$ over $[a, b]$" and "slope of the secant line from $a$ to $b$" are two names for the same number, tying algebra (averages) to geometry (slopes).

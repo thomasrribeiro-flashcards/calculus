@@ -86,13 +86,13 @@ A: The informal idea relies on unquantified words like "close" and "approaches,"
 
 ## 1.8 Limit Laws
 
-C: The [sum law] for limits states $\lim_{x\to a}[f(x) + g(x)] = \lim_{x\to a} f(x) + \lim_{x\to a} g(x)$, provided both individual limits exist, where $f$ and $g$ are functions and $a$ is the approached point.
+C: The [sum law] for limits states $\lim_{x\to a}\lbrack f(x) + g(x)\rbrack  = \lim_{x\to a} f(x) + \lim_{x\to a} g(x)$, provided both individual limits exist, where $f$ and $g$ are functions and $a$ is the approached point.
 
-C: The [product law] for limits states $\lim_{x\to a}[f(x)g(x)] = \big(\lim_{x\to a} f(x)\big)\big(\lim_{x\to a} g(x)\big)$, provided both individual limits exist, where $f$ and $g$ are functions and $a$ is the approached point.
+C: The [product law] for limits states $\lim_{x\to a}\lbrack f(x)g(x)\rbrack  = \big(\lim_{x\to a} f(x)\big)\big(\lim_{x\to a} g(x)\big)$, provided both individual limits exist, where $f$ and $g$ are functions and $a$ is the approached point.
 
 C: The [quotient law] for limits states $\lim_{x\to a}\frac{f(x)}{g(x)} = \frac{\lim_{x\to a} f(x)}{\lim_{x\to a} g(x)}$, provided $\lim_{x\to a} g(x) \neq 0$, where $f$ and $g$ are functions and $a$ is the approached point.
 
-C: The [constant multiple law] for limits states $\lim_{x\to a}[c \cdot f(x)] = c \cdot \lim_{x\to a} f(x)$, where $c$ is a real constant, $f$ is a function, and $a$ is the approached point.
+C: The [constant multiple law] for limits states $\lim_{x\to a}\lbrack c \cdot f(x)\rbrack  = c \cdot \lim_{x\to a} f(x)$, where $c$ is a real constant, $f$ is a function, and $a$ is the approached point.
 
 Q: Why does the quotient law require $\lim_{x\to a} g(x) \neq 0$?
 A: Division by zero is undefined, so if the denominator's limit is zero, the naive division in the right-hand formula fails. In such cases the actual limit may still exist (requiring separate techniques like factoring or L'Hopital's rule), may be infinite, or may not exist at all. The condition ensures the law gives a meaningful answer.
@@ -203,7 +203,7 @@ A: If $g$ is continuous at $a$ and $f$ is continuous at $g(a)$, then a small cha
 
 ## 1.19 Intermediate Value Theorem
 
-C: The [Intermediate Value Theorem (IVT)] states: if $f$ is continuous on the closed interval $[a, b]$ and $N$ is any value between $f(a)$ and $f(b)$, then there exists at least one $c$ in $[a, b]$ with $f(c) = N$, where $f$ is the function, $[a, b]$ is the interval, $N$ is the target output value, and $c$ is the guaranteed input.
+C: The [Intermediate Value Theorem (IVT)] states: if $f$ is continuous on the closed interval $\lbrack a, b\rbrack $ and $N$ is any value between $f(a)$ and $f(b)$, then there exists at least one $c$ in $\lbrack a, b\rbrack $ with $f(c) = N$, where $f$ is the function, $\lbrack a, b\rbrack $ is the interval, $N$ is the target output value, and $c$ is the guaranteed input.
 
 Q: Why does the IVT require continuity — what breaks if the function is discontinuous?
 A: The IVT relies on the graph of $f$ being an unbroken curve from $(a, f(a))$ to $(b, f(b))$; any horizontal line at height $N$ between the endpoints must be crossed. A discontinuity introduces a jump, and the curve may skip over $N$ entirely — going from below $N$ directly to above $N$ without ever achieving $N$. Continuity forbids such skips.

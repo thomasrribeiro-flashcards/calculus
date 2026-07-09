@@ -24,7 +24,7 @@ A: Because once you write $dQ$ correctly for a single slice, the integral $\int 
 Q: Why is the area between $y = f(x)$ and $y = g(x)$ on $[a,b]$ given by $\int_a^b [f(x) - g(x)]\,dx$ when $f \geq g$?
 A: A vertical strip at $x$ has height $f(x) - g(x)$ (top minus bottom) and width $dx$, so its area is $[f(x) - g(x)]\,dx$. Summing over $[a,b]$ gives $\int_a^b [f(x) - g(x)]\,dx$.
 
-C: The area between curves $y = f(x)$ and $y = g(x)$ on $[a,b]$ with $f \geq g$ is [$\int_a^b [f(x) - g(x)]\,dx$], where $f$ is the upper curve and $g$ is the lower curve.
+C: The area between curves $y = f(x)$ and $y = g(x)$ on $\lbrack a,b\rbrack $ with $f \geq g$ is [$\int_a^b \lbrack f(x) - g(x)\rbrack \,dx$], where $f$ is the upper curve and $g$ is the lower curve.
 
 Q: What happens if $f$ and $g$ cross on $[a,b]$?
 A: You must split the integral at each crossing point and use $|f - g|$ on each subinterval, since area is always positive. The sign of $f - g$ flips where the curves cross.
@@ -58,7 +58,7 @@ C: To find the limits for an area-between-curves integral, solve [$f(x) = g(x)$]
 Q: When should you integrate with respect to $y$ instead of $x$?
 A: When the region is more naturally described as "left curve $x = g(y)$ to right curve $x = f(y)$" for each $y$. This happens when one curve is not a single-valued function of $x$ (e.g., a sideways parabola) or when vertical strips would require splitting the region.
 
-C: Slicing horizontally gives strips of height $dy$ and width $[x_{\text{right}}(y) - x_{\text{left}}(y)]$, with total area [$\int_c^d [x_{\text{right}}(y) - x_{\text{left}}(y)]\,dy$], where $c$ and $d$ are the minimum and maximum $y$-values of the region.
+C: Slicing horizontally gives strips of height $dy$ and width $\lbrack x_{\text{right}}(y) - x_{\text{left}}(y)\rbrack $, with total area [$\int_c^d \lbrack x_{\text{right}}(y) - x_{\text{left}}(y)\rbrack \,dy$], where $c$ and $d$ are the minimum and maximum $y$-values of the region.
 
 Q: Why does switching from $dx$ to $dy$ sometimes avoid splitting the integral into two pieces?
 A: A vertical strip may have a top curve that changes midway through the region, forcing two integrals. A horizontal strip may see the same left and right curves throughout, needing only one integral.
@@ -71,7 +71,7 @@ A: Choose the direction in which a typical slice crosses the region without chan
 Q: Why does rotating a region about an axis that forms its edge produce solid disks rather than rings?
 A: Because the region touches the axis, each cross section perpendicular to the axis is a full circle (no hole in the middle). The radius of the disk is the function value $f(x)$.
 
-C: The disk method volume for rotating $y = f(x)$ on $[a,b]$ about the $x$-axis is [$V = \int_a^b \pi [f(x)]^2\,dx$], where $f(x)$ is the radius of the disk at position $x$ and $dx$ is the disk's thickness.
+C: The disk method volume for rotating $y = f(x)$ on $\lbrack a,b\rbrack $ about the $x$-axis is [$V = \int_a^b \pi \lbrack f(x)\rbrack ^2\,dx$], where $f(x)$ is the radius of the disk at position $x$ and $dx$ is the disk's thickness.
 
 Q: Why does the disk method formula contain $\pi [f(x)]^2$?
 A: Each disk has area $\pi r^2$ with $r = f(x)$, and its volume is $(\text{area})(\text{thickness}) = \pi [f(x)]^2\,dx$. Summing these gives the integral.
@@ -84,7 +84,7 @@ A: The axis of rotation must be an edge of the region — the region must touch 
 Q: Why do we subtract $\pi r_{\text{inner}}^2$ from $\pi r_{\text{outer}}^2$ in the washer method?
 A: When the axis of rotation lies outside the region, each cross section is a ring (washer). Its area is the outer disk area minus the inner disk area: $\pi R^2 - \pi r^2$, where $R$ is the outer radius and $r$ is the inner radius.
 
-C: The washer method gives $V = \int_a^b \pi\big([R(x)]^2 - [r(x)]^2\big)\,dx$, where [$R(x)$] is the outer radius (distance from axis to far edge) and $r(x)$ is the inner radius (distance from axis to near edge).
+C: The washer method gives $V = \int_a^b \pi\big(\lbrack R(x)\rbrack ^2 - \lbrack r(x)\rbrack ^2\big)\,dx$, where [$R(x)$] is the outer radius (distance from axis to far edge) and $r(x)$ is the inner radius (distance from axis to near edge).
 
 Q: How do you compute inner and outer radii when the axis of rotation is $y = k$ rather than the $x$-axis?
 A: The radius at $x$ is the distance from the curve to the line $y = k$, namely $|f(x) - k|$. The outer radius uses the curve farther from $y=k$, and the inner radius uses the curve closer to $y=k$.
@@ -120,7 +120,7 @@ A: If the curves can't be easily inverted (e.g., $y = x + \sin x$ has no closed-
 Q: Why is $V = \int_a^b A(x)\,dx$ the volume of a solid with known cross-section $A(x)$?
 A: Slice the solid into thin slabs perpendicular to the $x$-axis. Each slab has face area $A(x)$ and thickness $dx$, so its volume is $A(x)\,dx$. Summing over $[a,b]$ gives the total volume.
 
-C: For a solid with cross-sectional area $A(x)$ perpendicular to the $x$-axis on $[a,b]$, the volume is [$V = \int_a^b A(x)\,dx$], where $A(x)$ is the area of the cross section at position $x$ and $dx$ is the slab's thickness.
+C: For a solid with cross-sectional area $A(x)$ perpendicular to the $x$-axis on $\lbrack a,b\rbrack $, the volume is [$V = \int_a^b A(x)\,dx$], where $A(x)$ is the area of the cross section at position $x$ and $dx$ is the slab's thickness.
 
 Q: Why do disks, washers, and cross-section volumes all share the same underlying idea?
 A: They're all $\int A(x)\,dx$ — disks have $A = \pi r^2$, washers have $A = \pi(R^2 - r^2)$, and general cross-sections allow squares, triangles, semicircles, or anything else. The method is one idea; the cross-section shape changes.
@@ -141,7 +141,7 @@ S:
 
 ## 12.10 Arc Length
 
-C: The arc length of $y = f(x)$ on $[a,b]$ is [$L = \int_a^b \sqrt{1 + [f'(x)]^2}\,dx$], where $f'(x)$ is the derivative of $f$ and $[a,b]$ is the interval over which the curve runs.
+C: The arc length of $y = f(x)$ on $\lbrack a,b\rbrack $ is [$L = \int_a^b \sqrt{1 + \lbrack f'(x)\rbrack ^2}\,dx$], where $f'(x)$ is the derivative of $f$ and $\lbrack a,b\rbrack $ is the interval over which the curve runs.
 
 Q: Why does the arc length formula involve $f'(x)$ rather than $f(x)$?
 A: Because length depends on how fast the curve rises, not on its height. A steep curve (large $|f'|$) covers more arc per unit of horizontal distance than a flat one.
@@ -200,7 +200,7 @@ A: Pressure varies continuously with depth. Using the center pressure is only ex
 
 ## 12.15 Average Value of a Function
 
-C: The average value of $f$ on $[a,b]$ is [$\bar{f} = \frac{1}{b-a}\int_a^b f(x)\,dx$], where $b-a$ is the length of the interval and $\int_a^b f(x)\,dx$ is the "total accumulation" of $f$.
+C: The average value of $f$ on $\lbrack a,b\rbrack $ is [$\bar{f} = \frac{1}{b-a}\int_a^b f(x)\,dx$], where $b-a$ is the length of the interval and $\int_a^b f(x)\,dx$ is the "total accumulation" of $f$.
 
 Q: Why does dividing the integral by $(b-a)$ give an average?
 A: The integral $\int_a^b f\,dx$ is the area under $f$ on $[a,b]$. Spreading that same area uniformly over the interval gives a rectangle of width $(b-a)$ and height $\bar{f}$, so $\bar{f} = \frac{\text{area}}{\text{width}}$.

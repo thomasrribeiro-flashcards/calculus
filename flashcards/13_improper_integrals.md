@@ -95,7 +95,7 @@ C: The p-integral convergence rules are opposite because fast decay helps at inf
 
 ## 13.13 Direct Comparison Test
 
-C: If $0 \leq f(x) \leq g(x)$ on $[a,\infty)$ and $\int_a^\infty g\,dx$ [converges], then $\int_a^\infty f\,dx$ converges, where $f$ and $g$ are both continuous and nonnegative.
+C: If $0 \leq f(x) \leq g(x)$ on $\lbrack a,\infty)$ and $\int_a^\infty g\,dx$ [converges], then $\int_a^\infty f\,dx$ converges, where $f$ and $g$ are both continuous and nonnegative.
 
 Q: Why does $0\leq f\leq g$ with $\int g<\infty$ force $\int f$ to converge?
 A: Because $f\geq 0$, the partial integral $F(b)=\int_a^b f\,dx$ is monotonically increasing in $b$. The inequality $f\leq g$ gives $F(b)\leq \int_a^b g\,dx \leq \int_a^\infty g\,dx$, a finite upper bound. A monotone bounded sequence converges, so $\lim_{b\to\infty}F(b)$ exists.
@@ -109,7 +109,7 @@ A: To prove convergence of $\int f$, dominate it above: find $g\geq f$ whose int
 
 ## 13.15 Limit Comparison Test
 
-C: If $f,g>0$ on $[a,\infty)$ and $\lim_{x\to\infty}\frac{f(x)}{g(x)} = L$ with $0<L<\infty$, then $\int_a^\infty f\,dx$ and $\int_a^\infty g\,dx$ [either both converge or both diverge].
+C: If $f,g>0$ on $\lbrack a,\infty)$ and $\lim_{x\to\infty}\frac{f(x)}{g(x)} = L$ with $0<L<\infty$, then $\int_a^\infty f\,dx$ and $\int_a^\infty g\,dx$ [either both converge or both diverge].
 
 Q: Why is limit comparison often easier than direct comparison?
 A: Direct comparison demands a clean pointwise inequality, which can fail on small regions or require tedious algebra. Limit comparison only needs the ratio to tend to a positive finite constant, capturing that $f$ and $g$ have the same asymptotic magnitude. For rational or algebraic integrands, you just pick $g$ as the dominant-term behavior at infinity.

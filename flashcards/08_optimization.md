@@ -36,7 +36,7 @@ A: (1) Find all critical points of $f$ in $(a, b)$, where $f'(x) = 0$ or $f'$ is
 Q: Why do you only need to check critical points and endpoints, and not other points?
 A: A continuous function on a closed interval attains its max/min at a point that is either interior (forcing $f'=0$ or undefined, i.e. a critical point) or on the boundary. Those are the only places an extremum can hide.
 
-C: On a closed interval $[a,b]$ with continuous $f$, absolute extrema occur at [critical points or endpoints].
+C: On a closed interval $\lbrack a,b\rbrack $ with continuous $f$, absolute extrema occur at [critical points or endpoints].
 
 ## 8.4 Extreme Value Theorem
 

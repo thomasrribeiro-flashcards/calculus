@@ -42,7 +42,7 @@ A: A monotonically increasing sequence that is bounded above cannot oscillate or
 
 C: A sequence $(a_n)$ is [monotonically increasing] if $a_{n+1} \geq a_n$ for all $n$, where $a_n$ is the $n$-th term.
 
-C: The Monotone Convergence Theorem states: every bounded monotonic sequence [converges], where "bounded" means all terms lie in some fixed interval $[m, M]$.
+C: The Monotone Convergence Theorem states: every bounded monotonic sequence [converges], where "bounded" means all terms lie in some fixed interval $\lbrack m, M\rbrack $.
 
 Q: How does the monotone convergence theorem justify the definition $e = \lim(1 + 1/n)^n$?
 A: The sequence $a_n = (1 + 1/n)^n$ can be shown to be increasing and bounded above by $3$. By the theorem, a limit exists, and we define that limit to be $e$. Without monotone convergence, the existence of $e$ this way would be unclear.
@@ -101,7 +101,7 @@ A: It is cheap to compute and eliminates obviously divergent candidates. If $a_n
 Q: Why does the integral test work, geometrically?
 A: If $f(x)$ is positive, continuous, and decreasing with $f(n) = a_n$, then the series $\sum a_n$ and integral $\int_1^\infty f(x)\,dx$ bound each other using rectangles. The sum is trapped between $\int_1^\infty f\,dx$ and $a_1 + \int_1^\infty f\,dx$, so both converge or both diverge.
 
-C: The integral test applies when $f$ is positive, [decreasing], and continuous on $[1,\infty)$ with $f(n) = a_n$, where $a_n$ is the $n$-th term of the series and $f$ is the associated function.
+C: The integral test applies when $f$ is positive, [decreasing], and continuous on $\lbrack 1,\infty)$ with $f(n) = a_n$, where $a_n$ is the $n$-th term of the series and $f$ is the associated function.
 
 C: By the integral test, $\sum_{n=1}^\infty a_n$ and $\int_1^\infty f(x)\,dx$ either both converge or both [diverge], where $f$ is positive and decreasing with $f(n) = a_n$.
 
@@ -187,7 +187,7 @@ A: A power series $\sum c_n (x - a)^n$ converges in an interval $|x - a| < R$ wh
 
 C: A power series centered at $a$ has the form $\sum_{n=0}^\infty c_n (x - a)^n$, where $c_n$ is the $n$-th [coefficient] and $a$ is the center.
 
-C: The radius of convergence $R$ is such that the power series converges absolutely for $|x - a| < R$ and [diverges] for $|x - a| > R$, where $R \in [0, \infty]$.
+C: The radius of convergence $R$ is such that the power series converges absolutely for $|x - a| < R$ and [diverges] for $|x - a| > R$, where $R \in \lbrack 0, \infty\rbrack $.
 
 Q: How do you compute the radius of convergence using the ratio test?
 A: Apply the ratio test to $|c_{n+1}(x-a)^{n+1} / (c_n(x-a)^n)| = |x - a| \cdot |c_{n+1}/c_n|$. If $|c_{n+1}/c_n| \to 1/R$, the ratio is $|x-a|/R$, which is less than $1$ iff $|x - a| < R$. This gives $R = \lim |c_n/c_{n+1}|$ when the limit exists.
