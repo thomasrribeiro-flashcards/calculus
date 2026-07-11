@@ -1,6 +1,6 @@
 +++
 order = 1
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "calculus", "limits", "continuity", "epsilon-delta", "squeeze-theorem"]
 +++
 

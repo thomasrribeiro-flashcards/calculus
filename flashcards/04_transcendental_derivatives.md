@@ -1,6 +1,6 @@
 +++
 order = 4
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "calculus", "derivative", "trig", "exponential", "logarithm", "inverse-trig"]
 +++
 

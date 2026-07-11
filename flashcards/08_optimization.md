@@ -1,6 +1,6 @@
 +++
 order = 8
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "calculus", "optimization", "extrema", "constraints", "newton-method"]
 +++
 

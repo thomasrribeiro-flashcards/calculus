@@ -1,6 +1,6 @@
 +++
 order = 13
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "calculus", "improper-integrals", "convergence", "divergence", "comparison-test"]
 +++
 

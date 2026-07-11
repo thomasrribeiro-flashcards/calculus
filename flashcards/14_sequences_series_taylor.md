@@ -1,6 +1,6 @@
 +++
 order = 14
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "calculus", "sequences", "series", "convergence-tests", "power-series", "taylor-series", "maclaurin"]
 +++
 

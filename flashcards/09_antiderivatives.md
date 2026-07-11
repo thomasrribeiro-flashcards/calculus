@@ -1,6 +1,6 @@
 +++
 order = 9
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "calculus", "antiderivative", "indefinite-integral", "initial-value-problem"]
 +++
 

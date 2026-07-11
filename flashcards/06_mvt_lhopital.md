@@ -1,6 +1,6 @@
 +++
 order = 6
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "calculus", "mean-value-theorem", "rolles-theorem", "lhopital", "indeterminate-forms"]
 +++
 

@@ -1,6 +1,6 @@
 +++
 order = 10
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "calculus", "definite-integral", "riemann-sum", "fundamental-theorem", "ftc"]
 +++
 

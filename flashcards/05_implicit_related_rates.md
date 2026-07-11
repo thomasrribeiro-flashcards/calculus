@@ -1,6 +1,6 @@
 +++
 order = 5
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "calculus", "implicit-differentiation", "related-rates", "chain-rule"]
 +++
 
